@@ -5,6 +5,13 @@ def index(request):
         request,
         "index.html",
         {
-            "title": "Django example",
+            "title": "Gamers Spot",
         },
     )
+
+
+def profile(request):
+    return render(request, 'profile.html')
+
+def talk(request):
+    return render(request, 'talk.html')
